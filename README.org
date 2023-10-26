@@ -1,17 +1,25 @@
 * TMUX Configuration
 
-** Create Symbolic Link to `$XDG_CONFIG_HOME`
+** Setup
+
+*** Create Symbolic Link to `$XDG_CONFIG_HOME`
 #+begin_src
 	make symlink_cfg
 #+end_src
 
-** Install TMUX Package Manager `tpm`
+*** Install TMUX Package Manager `tpm`
 #+begin_src
 	make install_tpm
 #+end_src
 
-** Install Packages
+*** Install Packages
 Execute the key combination `Ctrl-A` + `I`
 
-** Update Packages
+*** Update Packages
 Execute the key combination `Ctrl-A` + `U`
+
+** Notes re: Error Codes I encountered during setup
+
+If you get the error code...
+- 9: Try `tmux kill-server`.
+- 126: The path to the `tpm` executable is probably not defined correctly.
