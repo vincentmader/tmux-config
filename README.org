@@ -1,0 +1,17 @@
+* TMUX Configuration
+
+** Create Symbolic Link to `$XDG_CONFIG_HOME`
+#+begin_src
+	make symlink_cfg
+#+end_src
+
+** Install TMUX Package Manager `tpm`
+#+begin_src
+	make install_tpm
+#+end_src
+
+** Install Packages
+Execute the key combination `Ctrl-A` + `I`
+
+** Update Packages
+Execute the key combination `Ctrl-A` + `U`
